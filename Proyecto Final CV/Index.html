@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>Currículum Vitae</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Questrial">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="./css/site.css" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./scripts/curriculum.js"></script>
+</head>
+
+<body>
+
+
+  <nav class="navbar fixed-top navbar-expand-sm bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="#">Ruben Shelton</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain"
+        aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse fw-bold" id="navbarMain">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#experiencia">Experiencia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#habilidades">Habilidades</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacto">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-3">
+    <div class="row justify-content-center">
+      <div class="col-10 col-sm-8 col-lg-4 text-center">
+        <img id="foto" src="" title="Ruben Shelton" alt="No se pudo cargar la imagen">
+        <h1>Ruben Shelton</h1>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-10">
+        <p>Técnico en informática con más de 5 años de experiencia en industrias de tecnología.</p>
+        <p>Especializado en brindar apoyo y asesoría técnica a empresas con más de 500 empleados y en mantener un índice
+          de satisfacción del usuario de 9,5.</p>
+        <p>Busco brindar la misma calidad de atención y optimizar el rendimiento de los sistemas informáticos.</p>
+      </div>
+    </div>
+    <h2 id="experiencia"><i class="fa fa-briefcase me-3"></i></i>Experiencia</h2>
+    <div class="row justify-content-center">
+      <div class="col-10">
+        <h4>Técnico de Sistemas</h4>
+        <p><i>IT Partners and Co.</i></p>
+        <p>Julio 2017- enero 2023</p>
+        <ul>
+          <li>A cargo de proporcionar mantenimiento y soporte para los más de 500 equipos informáticos de la empresa
+          </li>
+          <li>Creé un protocolo de actuación en caso de averías y problemas que redujo los tiempos de reparación en un
+            15%.</li>
+          <li>Gracias a la creación de una serie de videos tutoriales dirigidos al usuario, reduje el número de
+            solicitudes de ayuda diaria en un 25%.</li>
+          <li>Instauré un nuevo sistema de encuestas para revelar sus índices de satisfacción anuales.</li>
+        </ul>
+        <hr>
+        <h4>Técnico informático</h4>
+        <p><i>PANEL Sistemas Informáticos</i></p>
+        <p>Febrero 2015- julio 2017</p>
+        <ul>
+          <li>Responsable de la instalación de sistemas operativos y paquetes de software para los nuevos empleados de
+            la compañía.</li>
+          <li>Proporcioné mantenimiento a más de 600 equipos de cómputo de forma periódica.</li>
+          <li>Atendí exitosamente un promedio de 50 solicitudes diarias provenientes de usuarios.</li>
+          <li>Reduje el tiempo de respuesta de atención de usuario en un 50%</li>
+        </ul>
+      </div>
+    </div>
+    <h2 id="habilidades"><i class="fa fa-gears me-3"></i>Habilidades</h2>
+    <div class="row justify-content-center">
+      <div class="col-10">
+        <ul>
+          <li>HTML5, CSS3 y Javascript</li>
+          <li>Bases de datos SQLServer</li>
+          <li>Conocimiento de las bases de datos MySQL y PostgreSQL</li>
+          <li>Conocimientos de redes LAN y WAN</li>
+          <li>Conocimientos en herramientas de Office</li>
+        </ul>
+      </div>
+    </div>
+    <h2 id="contacto"><i class="fa fa-envelope me-3"></i>Contacto</h2>
+    <form class="row justify-content-center">
+      <div class="col-10 col-sm-5 col-lg-3">
+        <label for="inputNombre" class="form-label">Nombre</label>
+        <input type="text" class="form-control" placeholder="Nombre" id="inputNombre">
+      </div>
+      <div class="col-10 col-sm-5 col-lg-3">
+        <label for="inputApellido" class="form-label">Apellido</label>
+        <input type="text" class="form-control" placeholder="Apellido" id="inputApellido">
+      </div>
+      <div class="col-10 col-sm-10 col-lg-4">
+        <label for="inputEmail" class="form-label">Email</label>
+        <input type="email" class="form-control" placeholder="Email" id="inputEmail">
+      </div>
+      <div class="col-10">
+        <label for="inputDescripcion" class="form-label">Descripción del puesto</label>
+        <textarea class="form-control" placeholder="Descripción del puesto" id="inputDescripcion" rows="10"></textarea>
+      </div>
+      <div class="col-10 pt-1 text-end">
+        <button class="btn btn-primary" type="submit" onclick="EnviarContacto()">Enviar</button>
+      </div>
+    </form>
+  </div>
+  <div class="container">
+    <footer class="py-3 my-4">
+      <p class="text-center text-muted border-top">© 2023 Matias Mansilla</p>
+    </footer>
+  </div>
+
+</body>
+
+</html>
