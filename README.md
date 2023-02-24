@@ -1,5 +1,5 @@
 # Proyecto final 
 
-# Primeros pasos del desarrollo frontend
+## Primeros pasos del desarrollo frontend
  
-# Matias Mansilla
+## Matias Mansilla
